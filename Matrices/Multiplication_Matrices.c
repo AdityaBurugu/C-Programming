@@ -24,7 +24,7 @@ int main()
 	  {
     	for ( j = 0 ; j < c1 ; j++ )
       	{
-      	  printf("Enter %d row %d column element: ",i,j);
+      	  printf("Enter %d row %d column element: ",i+1,j+1);
 		  scanf("%d", &a[i][j]);
 		}
 	  }
@@ -35,7 +35,7 @@ int main()
       {
 		  for ( j = 0 ; j < c2 ; j++ )
 	      {
-	      	printf("Enter %d row %d column element: ",i,j);
+	      	printf("Enter %d row %d column element: ",i+1,j+1);
 			scanf("%d", &b[i][j]);
 		  }
 	  }

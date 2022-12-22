@@ -19,7 +19,7 @@ int main()
 		{
 			for (j=0;j<c1;j++)
 			{
-				printf("Enter %d row %d column element: ",i,j);
+				printf("Enter %d row %d column element: ",i+1,j+1);
 				scanf("%d",&a[i][j]);
 			}
 		}
@@ -29,7 +29,7 @@ int main()
 		{
 			for (j=0;j<c1;j++)
 			{
-				printf("%d row %d column element: %d",i,j,a[i][j]);
+				printf("%d row %d column element: %d",i+1,j+1,a[i][j]);
 				printf("\n");
 			}
 		}
@@ -39,7 +39,7 @@ int main()
 		{
 			for (j=0;j<c2;j++)
 			{
-				printf("Enter %d row %d column element: ",i,j);
+				printf("Enter %d row %d column element: ",i+1,j+1);
 				scanf("%d",&b[i][j]);
 			}
 		}
@@ -50,7 +50,7 @@ int main()
 		{
 			for (j=0;j<c2;j++)
 			{
-				printf("%d row %d column element: %d",i,j,b[i][j]);
+				printf("%d row %d column element: %d",i+1,j+1,b[i][j]);
 				printf("\n");
 			}
 		}
