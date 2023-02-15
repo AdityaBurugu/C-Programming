@@ -2,59 +2,64 @@
 #include<conio.h>
 int main()
 {
-	int r1, c1, i, j;
-	int A[10][10], Transpose[10][10];
 
-    printf("Enter the number of rows of first matrix: ");
-    scanf("%d", &r1);
-  
-    printf("Enter the number of columns of first matrix: ");
-    scanf("%d", &c1);
-  
-    if(r1==c1)
+int iRowSize;
+int iColSize;
+int iTransRowSize;
+int iTransColSize;
+int iMatA[10][10];
+int iMatTransA[10][10];
+int iTempdata;
+
+int iRowIndex;
+int iColIndex;
+
+//Read Number of Rows & Columns
+printf("Enter Number of Rows & Columns of Matrix\n");
+scanf("%d%d",&iRowSize,&iColSize);
+printf("Size of the Matrix is %d x %d\n",iRowSize,iColSize);
+//iMatA[iRowSize][iColSize];
+//Read Elements of Matrix
+for(iRowIndex=0;iRowIndex<iRowSize;iRowIndex++)
+{
+	for (iColIndex=0;iColIndex<iColSize;iColIndex++)
 	{
-    	printf("Enter the values of elements of matrix A\n");
-		for(i=0;i<r1;i++)
-		{
-			for(j=0;j<c1;j++)
-			{
-				printf("Enter %d row %d column element: ",i+1,j+1);
-				scanf("%d",&A[i][j]);
-			}
-		}
-		
-		printf("The Matrix A is\n");
-		for(i=0;i<r1;i++)
-		{
-			for(j=0;j<c1;j++)
-			{
-				printf("%d\t",A[i][j]);
-			}
-			printf("\n");
-		}
-		
-		for(i=0;i<r1;i++)
-		{
-			for(j=0;j<c1;j++)
-			{
-				Transpose[i][j]=A[j][i];
-			}
-		}
-		printf("The Transpose of matrix A is\n");
-		for(i=0;i<r1;i++)
-		{
-			for(j=0;j<c1;j++)
-			{
-				printf("%d\t",Transpose[i][j]);
-			}
-			printf("\n");
-		}	
+		printf("Enter %d row %d column element: ",iRowIndex+1,iColIndex+1);
+		scanf("%d",&iMatA[iRowIndex][iColIndex]);
 	}
-	
-	else
+}
+printf("Original Matrix\n");
+for(iRowIndex=0;iRowIndex<iRowSize;iRowIndex++)
+{
+	for(iColIndex=0;iColIndex<iColSize;iColIndex++)
 	{
-		printf("Please Enter Row and Column of same Order");
+		printf("%d\t",iMatA[iRowIndex][iColIndex]);
 	}
-    
+	printf("\n");
+}
+
+for(iRowIndex=0;iRowIndex<iRowSize;iRowIndex++)
+{
+	for(iColIndex=0;iColIndex<iColSize;iColIndex++)
+	{
+		iMatTransA[iColIndex][iRowIndex]=iMatA[iRowIndex][iColIndex];
+	}
+}
+
+iTransRowSize = iColSize;
+iTransColSize = iRowSize;
+
+printf("Transpose Matrix\n");
+for(iRowIndex=0;iRowIndex<iTransRowSize;iRowIndex++)
+{
+	for(iColIndex=0;iColIndex<iTransColSize;iColIndex++)
+	{
+		printf("%d\t",iMatTransA[iRowIndex][iColIndex]);
+	}
+	printf("\n");
+}
+
+
+
 	return 0;
 }
