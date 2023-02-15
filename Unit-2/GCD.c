@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
    int a,b,rem;
-   printf("enter any two numbers:");
+   printf("Enter any two numbers:");
    scanf("%d %d",&a,&b);
    while(b!=0)
    { 

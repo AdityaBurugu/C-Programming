@@ -13,5 +13,4 @@ int main()
 		printf("%d is greater than %d",n2,n1);
 
 	return 0;
-	
 }

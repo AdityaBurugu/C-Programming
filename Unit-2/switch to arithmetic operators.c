@@ -1,15 +1,15 @@
 #include<stdio.h>
 #include<conio.h>
-main()
+int main()
 {
-int x,y,sum,sub,mul,div,mod,choice;
+int x,y,sum,sub,mul,div,mod,c;
 printf("Enter the value of x: ");
 scanf("%d",&x);
 printf("Enter the value of y: ");
 scanf("%d",&y);
 printf("Select choice from \n1.Addition\n2.Subtraction\n3.Product\n4.Quotient\n5.Remainder\nEnter your choice: ");
-scanf("%d",&choice);
-switch(choice)
+scanf("%d",&c);
+switch(c)
 {
 case 1:
 	sum=x+y;

@@ -12,7 +12,7 @@ int main() {
         n /= 10;
     }
     
-    printf("Reversed:%d",reversed);
+    //printf("Reversed:%d",reversed);
 
     if (original == reversed)
         printf("%d is a palindrome.", original);

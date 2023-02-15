@@ -9,13 +9,13 @@ int main()
 	scanf("%d",&y);
 
 	if (x>=0 && y>=0)
-		printf("Point is in first quadrant");
+		printf("Point(%d,%d) is in first quadrant",x,y);
 		
 	else if(x<0 && y>0)
-		printf("Point is in second quadrant");
+		printf("Point(%d,%d) is in second quadrant",x,y);
 		
 	else if(x<0 && y<0)
-		printf("Point is in third quadrant");
+		printf("Point(%d,%d) is in third quadrant",x,y);
 		
 	else if(x>0 && y<0)
 		printf("Point(%d,%d) is in fourth quadrant",x,y);

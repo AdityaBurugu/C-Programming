@@ -3,12 +3,9 @@
 int main()
 {
 	int n;
-	printf("Enter a value:");
-	scanf("%d",&n);
-	printf("%d",n);
 	while(n>=0)
 	{
-		printf("\nEnter a value:");
+		printf("Enter a value:");
 		scanf("%d",&n);
 		if (n<0)
 		{
@@ -16,7 +13,7 @@ int main()
 			break;
 		}
 		else
-			printf("%d",n);
+			printf("%d\n",n);
 	}
 
 	return 0;

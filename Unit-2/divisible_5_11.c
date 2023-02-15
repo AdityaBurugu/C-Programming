@@ -6,7 +6,7 @@ int main()
 	printf("Enter an Integer:");
 	scanf("%d",&n);
 	
-	if ((n%5 && n%11) == 0)
+	if (n%5==0 && n%11 == 0)
 			printf("%d is divisible by 5 & 11",n);
 	
 	else 

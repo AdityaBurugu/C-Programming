@@ -8,7 +8,7 @@ int main()
 	{
 		if(i%5==0)
 			continue;
-		printf("%d\n",i);
+		printf("%d\t",i);
 	}   
 	return 0;
 }

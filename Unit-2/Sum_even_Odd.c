@@ -34,5 +34,7 @@ int main()
 	printf("\nAverage of Even = %f",avge);
 	avgo = (float)sumo/counto;
 	printf("\nAverage of Odd = %f",avgo);
+	printf("\nCount of Even = %d",counte);
+	printf("\nCount of Odd = %d",counto);
 	return 0;
 }
